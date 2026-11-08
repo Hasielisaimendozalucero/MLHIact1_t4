@@ -54,3 +54,17 @@ Para compilar y ejecutar el proyecto localmente en tu máquina:
 1. Compilar el archivo ejecutable `.jar`:
    ```bash
    ./mvnw clean package -DskipTests
+
+
+   Ejecutar la aplicación en el puerto 8081:
+
+
+java -jar target/springboot-applications-0.0.1-SNAPSHOT.jar --server.port=8081
+
+Acceder en el navegador a: http://localhost:8081/mi-nombre
+
+☁️ Despliegue en Servidor
+El servicio se encuentra actualmente corriendo en producción a través de Render utilizando un archivo Dockerfile configurado para ejecutar el paquete .jar previamente compilado.
+
+
+---
